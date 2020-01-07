@@ -1,0 +1,178 @@
+[
+	{
+		"created": "2020-01-01 12:25:34",
+		"slug": "lejondrakt",
+		"title": "Lejondräkt",
+		"category": "Accessoarer",
+		"price": "240",
+		"content": "Kanalisera din katts inre lejon med denna söta katthatt!",
+		"inventory": "10",
+		"image": "lejon.jpg",
+		"bestSeller": true
+	},
+	{
+		"created": "2020-01-01 14:06:25",
+		"slug": "star-wars-c-3po-r2-d2",
+		"title": "Star Wars C-3PO/R2-D2",
+		"category": "Leksaker",
+		"price": "129",
+		"content": "Möss förklädda som de två mest kända droiderna från Star Wars. Behöver vi ens säga att C-3PO och R2-D2 kommer förse din katt med oändligt roliga stunder? Storlek: 13 x 10 x 4 cm. OBS! Dessa måste fångas med ljusets hastighet!",
+		"inventory": "30",
+		"image": "pco-star-wars.jpg",
+		"bestSeller": true
+	},
+	{
+		"created": "2020-01-02 00:55:28",
+		"slug": "star-wars-han-solo",
+		"title": "Star Wars Han Solo",
+		"category": "Leksaker",
+		"price": "89",
+		"content": "Katten! Han Solo behöver din hjälp eftersom han fastnat i karbonit! Han är väl skyddad där under tiden, men det är din katts uppgift att rädda honom så han inte blir fast för alltid. Hur du väljer att rädda honom - hålla fast och sparka med baktassarna, bita eller kasta upp i luften spelar ingen roll! Storlek: 18 x 10 x 5 cm.",
+		"inventory": "40",
+		"image": "pco-star-wars-han-solo.jpg",
+		"bestSeller": true
+	},
+	{
+		"created": "2020-01-02 06:08:28",
+		"slug": "catit-senses-20-digger",
+		"title": "Catit Senses 2.0 Digger",
+		"category": "Skålar",
+		"price": "189",
+		"content": "Att berika kattens miljö är viktigt för dess psykiska välbefinnande, särskilt för inomhuskatter. Catit Digger aktiveringsleksak gör att din katt får kämpa för att komma åt sin mat - precis som den skulle i det vilda. Flera fördelar med aktiveringsleksaken: utmanar din katt att tänka och lösa problem minskar hetsätning och förlänger ättiden olika storlekar på rören vilket ger olika svårighetsgrader enkel att diska kan även användas när katten är ensam hemma",
+		"inventory": "30",
+		"image": "catit-senses-20-digger.jpg",
+		"bestSeller": false
+	},
+	{
+		"created": "2020-01-03 05:32:46",
+		"slug": "catit-senses-20-food-tree",
+		"title": "Catit Senses 2.0 Food Tree",
+		"category": "Skålar",
+		"price": "289",
+		"content": "Att berika kattens miljö är viktigt för dess psykiska välbefinnande, särskilt för inomhuskatter. Catit Food Tree aktiveringsleksak gör att din katt får kämpa för att komma åt sin mat - precis som den skulle i det vilda. Flera fördelar med aktiveringsleksaken: utmanar din katt att tänka och lösa problem minskar hetsätning och förlänger ättiden olika höjdnivåer på trädet vilket ger olika svårighetsgrader enkel att diska kan även användas när katten är ensam hemma",
+		"inventory": "15",
+		"image": "catit-senses-20-food-tree.jpg",
+		"bestSeller": false
+	},
+	{
+		"created": "2020-01-03 11:31:24",
+		"slug": "grumpy-cat-catnip-sock",
+		"title": "Grumpy Cat Catnip Sock",
+		"category": "Kattmynta",
+		"price": "99",
+		"content": "Catnip Sock - en leksak som prasslar och doftar av kattmynta, ugh. Den är även gjord av ett material som kattens klor tycker om och har snören med bjällror som låter fruktansvärt och inbjuder till lek och triggar kattens jaktinstinkt... Tråkigare än så kan man inte ha, säger Grumpy Cat! Ingen kan ha missat internetkändisen Grumpy Cat som tagit världen med storm. Grumpy Cat har huvudrollen i olika memes och med sin griniga uppsyn och buttra kommentarer har hon blivit en hyllad katt världen över.",
+		"inventory": "50",
+		"image": "grumpy-cat-catnip-sock.jpg",
+		"bestSeller": true
+	},
+	{
+		"created": "2020-01-03 18:56:10",
+		"slug": "kattunnel-nylon",
+		"title": "Kattunnel Nylon",
+		"category": "Aktiveringsleksaker",
+		"price": "159",
+		"content": "Trixie Kattunnel är en prasslig och spännande kattunnel som katter brukar älska! Med fyra öppningar som gör att din katt kan gömma sig och ligga på lur i tunneln och sedan smyga på, lekfullt attackera och överraska både kattkompisar och sina människor. Tunneln passar bra att använda både inomhus och utomhus och är gjord av polyester. Mått: 115 x 30 cm och kommer i osorterade färger.",
+		"inventory": "100",
+		"image": "kattunnel.jpg",
+		"bestSeller": false
+	},
+	{
+		"created": "2020-01-03 19:55:32",
+		"slug": "elektronisk-fjadergomma",
+		"title": "Elektronisk Fjädergömma",
+		"category": "Aktiveringsleksaker",
+		"price": "329",
+		"content": "En rolig aktiveringsleksak som kan hålla din katt sysselsatt en lång stund. En rörelsesensor gör att fjädern gömmer sig i leksaken. Går att ställa direkt på golvet eller skruva fast på väggen. Gummerade fötter gör att den står stadigt på de flesta underlag. Behöver två AA-batterier (medföljer ej). Ersättningsfjädrar finns att köpa till! Kom ihåg! Vissa av våra sällskapsdjur är starkare än vi tror. Håll katten under uppsikt när den leker, och ta bort leksaken om den går sönder. Tänk på att anpassa storleken på leksaken efter hur stort ditt djur är, lagom är alltid bäst.",
+		"inventory": "30",
+		"image": "fjader.jpg",
+		"bestSeller": false
+	},
+	{
+		"created": "2020-01-04 18:10:24",
+		"slug": "trendy-v1-transportbur",
+		"title": "Trendy V.1 Transportbur",
+		"category": "Transportburar",
+		"price": "299",
+		"content": "Atlas Trendy Transportbur - en bekväm resa för din hund eller katt! • Säker, lätt att monreta och rengöra • Ett fast bärhandtag för enkel förflyttning • Tillverkad av robust plast • Lätt att montera isär • Designen garanterar en god ventilation • Buren har en plastbelagd gallerdörr av metall som låses med clips • Två färger: kommer i osorterade färger om rosa eller grön. Storlek: 48 x 32,5 x 29 cm. Maxvikt husdjur: 5 kg",
+		"inventory": "45",
+		"image": "transportbur-rosa.jpg",
+		"bestSeller": false
+	},
+	{
+		"created": "2020-01-04 20:38:33",
+		"slug": "luxurious-trendy-transportbur",
+		"title": "Luxurious Trendy Transportbur",
+		"category": "Transportburar",
+		"price": "379",
+		"content": "Res med stil i lyxig transportbur från Moderna Luxurious! Snygg, trendig och praktisk transportväska för katt eller liten hund. Solid och enkel montering, tillverkad i premium kvalitetsplast som håller länge. Det mjuka handtaget på burens ovansida ger ett bra och ergonimiskt grepp. Mått: L 49,4 x B 32,2 x H 30,4 cm",
+		"inventory": "20",
+		"image": "moderna-luxurious-trendy-transportbur.jpg",
+		"bestSeller": false
+	},
+	{
+		"created": "2020-01-04 23:43:09",
+		"slug": "luxurious-trendy-skal",
+		"title": "Luxurious Trendy Skål",
+		"category": "Skålar",
+		"price": "59",
+		"content": "Servera maten med stil i lyxiga skålar! Snygg och tålig skål i trendig design. Skålen är tillverkad i premium kvalitetsplast för extra bra hållbarhet, skålarna tål att diskas i maskin. Den smarta kanten motverkar spill på golvet, och vid servering utomhus kan den fyllas med vatten för att hindra kryp och myror från att klättra in i skålen.",
+		"inventory": "40",
+		"image": "moderna-luxurious-trendy-skal.jpg",
+		"bestSeller": false
+	},
+	{
+		"created": "2020-01-05 00:19:42",
+		"slug": "pawise-unicorn-kattvippa",
+		"title": "Pawise Unicorn Kattvippa",
+		"category": "Leksaker",
+		"price": "49",
+		"content": "Vippa med kattmynta - väck jaktlusten i din minitiger! Härlig vippa med kattmynta! Trigga kattens jaktinstinkt och låt den jaga vippan, högt och lågt, snabbt och långsamt, göm den bakom föremål och låt katten få smyga på den. Ett tips är att låta katten få utlopp för sin jaktinstinkt en stund innan matdags, för att efterlikna det naturliga födosöksbeteendet så mycket som möjligt!",
+		"inventory": "100",
+		"image": "pawise-unicorn-teaser-with-catnip.jpg",
+		"bestSeller": false
+	},
+	{
+		"created": "2020-01-06 03:54:57",
+		"slug": "fluga-jordgubbar",
+		"title": "Fluga - jordgubbar",
+		"category": "Accessoarer",
+		"price": "199",
+		"content": "Denna fluga ger din katt den perfekta sommar looken.",
+		"inventory": "30",
+		"image": "fluga-jordgubbar.jpg",
+		"bestSeller": false
+	},
+	{
+		"created": "2020-01-06 07:29:20",
+		"slug": "fluga-fiskar",
+		"title": "Fluga - fiskar",
+		"category": "Accessoarer",
+		"price": "199",
+		"content": "Denna fluga med ett mönster med fiskar gör garanterat din katt till festens mittpunkt!",
+		"inventory": "45",
+		"image": "fluga-fiskar.jpg",
+		"bestSeller": false
+	},
+	{
+		"created": "2020-01-06 16:03:44",
+		"slug": "fluga-flamingo",
+		"title": "Fluga - flamingo",
+		"category": "Accessoarer",
+		"price": "199",
+		"content": "Denna fluga med ett mönster med rosa flamingos gör garanterat din katt till festens mittpunkt!",
+		"inventory": "30",
+		"image": "fluga-flamingo.jpg",
+		"bestSeller": false
+	},
+	{
+		"created": "2020-01-06 17:36:22",
+		"slug": "fluga-dinosaurier",
+		"title": "Fluga - dinosaurier",
+		"category": "Accessoarer",
+		"price": "199",
+		"content": "Denna fluga med ett mönster med dinosaurier gör garanterat din katt till festens mittpunkt!",
+		"inventory": "0",
+		"image": "fluga-dino.jpg",
+		"bestSeller": false
+	}
+]
