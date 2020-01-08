@@ -4,11 +4,10 @@
       <div class="container">
         <div class="columns">
           <div class="column is-half">
-            <h1 class="title is-1 has-text-weight-bold">Vi gör din katt lycklig!</h1>
+            <h1 class="title is-1 has-text-weight-bold">Vi har allt som gör din katt lycklig!</h1>
             <h2 class="subtitle is-5">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Suscipit voluptatem aliquid ipsam distinctio ipsum
-              eveniet earum a voluptas culpa quia.
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit
+              suscipit voluptatem aliquid ipsam distinctio ipsum
             </h2>
           </div>
         </div>
@@ -26,7 +25,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 .hero {
-  background-image: url("../assets/images/hero-test.jpg");
+  background-image: url("../assets/images/hero-bg.jpg");
   background-size: cover;
   background-position: center;
 
