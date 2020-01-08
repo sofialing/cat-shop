@@ -52,7 +52,7 @@
 		"content": "Att berika kattens miljö är viktigt för dess psykiska välbefinnande, särskilt för inomhuskatter. Catit Food Tree aktiveringsleksak gör att din katt får kämpa för att komma åt sin mat - precis som den skulle i det vilda. Flera fördelar med aktiveringsleksaken: utmanar din katt att tänka och lösa problem minskar hetsätning och förlänger ättiden olika höjdnivåer på trädet vilket ger olika svårighetsgrader enkel att diska kan även användas när katten är ensam hemma",
 		"inventory": 15,
 		"image": ["catit-senses-20-food-tree.jpg", "catit-senses-20-food-tree.png"],
-		"bestSeller": true
+		"bestSeller": false
 	},
 	{
 		"created": "2020-01-03 11:31:24",
@@ -74,7 +74,7 @@
 		"content": "Trixie Kattunnel är en prasslig och spännande kattunnel som katter brukar älska! Med fyra öppningar som gör att din katt kan gömma sig och ligga på lur i tunneln och sedan smyga på, lekfullt attackera och överraska både kattkompisar och sina människor. Tunneln passar bra att använda både inomhus och utomhus och är gjord av polyester. Mått: 115 x 30 cm och kommer i osorterade färger.",
 		"inventory": 100,
 		"image": ["kattunnel.jpg", "kattunnel.png"],
-		"bestSeller": true
+		"bestSeller": false
 	},
 	{
 		"created": "2020-01-03 19:55:32",
@@ -96,7 +96,7 @@
 		"content": "Atlas Trendy Transportbur - en bekväm resa för din hund eller katt! • Säker, lätt att monreta och rengöra • Ett fast bärhandtag för enkel förflyttning • Tillverkad av robust plast • Lätt att montera isär • Designen garanterar en god ventilation • Buren har en plastbelagd gallerdörr av metall som låses med clips • Två färger: kommer i osorterade färger om rosa eller grön. Storlek: 48 x 32,5 x 29 cm. Maxvikt husdjur: 5 kg",
 		"inventory": 45,
 		"image": ["transportbur-rosa.jpg", "transportbur-rosa.png"],
-		"bestSeller": true
+		"bestSeller": false
 	},
 	{
 		"created": "2020-01-04 20:38:33",
@@ -138,7 +138,7 @@
 			"pawise-unicorn-teaser-with-catnip.jpg",
 			"pawise-unicorn-teaser-with-catnip.png"
 		],
-		"bestSeller": true
+		"bestSeller": false
 	},
 	{
 		"created": "2020-01-06 03:54:57",
