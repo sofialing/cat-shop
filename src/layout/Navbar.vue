@@ -14,7 +14,7 @@
     <div class="navbar-menu">
       <div class="navbar-end">
         <router-link to="/" class="navbar-item">Start</router-link>
-        <a class="navbar-item">Produkter</a>
+        <router-link to="/products" class="navbar-item">Produkter</router-link>
         <router-link to="/about" class="navbar-item">Om oss</router-link>
         <a class="navbar-item">Kontakt</a>
       </div>
