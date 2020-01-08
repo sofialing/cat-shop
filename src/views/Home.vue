@@ -3,9 +3,13 @@
 		<Hero />
 		<Intro />
 		<Services />
-		<FeatureProducts :products="products.bestSellers" title="Mest populära" />
+		<FeatureProducts
+			:products="products.topSellers"
+			title="Populära produkter"
+		/>
 		<FeatureSection />
-		<FeatureProducts :products="products.bestSellers" title="Nytt i butiken" />
+		<FeatureProducts :products="products.newArrivals" title="Nytt i butiken" />
+		<FeatureBlogPosts title="Senaste från bloggen" />
 	</div>
 </template>
 
@@ -15,6 +19,7 @@ import Intro from '@/components/Intro.vue';
 import Services from '@/components/Services.vue';
 import FeatureProducts from '@/components/FeatureProducts.vue';
 import FeatureSection from '@/components/FeatureSection.vue';
+import FeatureBlogPosts from '@/components/FeatureBlogPosts.vue';
 
 import { Products } from '@/services/Products';
 
@@ -25,7 +30,8 @@ export default {
 		Intro,
 		Services,
 		FeatureProducts,
-		FeatureSection
+		FeatureSection,
+		FeatureBlogPosts
 	},
 	data() {
 		return {
