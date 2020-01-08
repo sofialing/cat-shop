@@ -50,8 +50,8 @@ export default {
 .card {
   box-shadow: none !important;
 
-  .card-content {
-    padding: 1.5rem 0;
-  }
+  //   .card-content {
+  //     padding: 1.5rem 0;
+  //   }
 }
 </style>

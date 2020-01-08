@@ -1,5 +1,5 @@
 <template>
-  <section class="section">
+  <section class="section has-background-white-ter">
     <div class="container">
       <h2 class="title is-2 has-text-weight-bold has-text-centered">{{ title }}</h2>
       <div class="columns is-multiline">
