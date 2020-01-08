@@ -21,14 +21,11 @@
 </template>
 
 <script>
-// import CheckIcon from 'vue-material-design-icons/CheckCircle.vue';
-// import CartOffIcon from 'vue-material-design-icons/CartOff.vue';
-
 export default {
   name: "BlogPostCard",
   props: {
     post: {
-      type: Array
+      type: Object
     }
   },
   computed: {
@@ -49,9 +46,5 @@ export default {
 <style scoped lang="scss">
 .card {
   box-shadow: none !important;
-
-  //   .card-content {
-  //     padding: 1.5rem 0;
-  //   }
 }
 </style>
