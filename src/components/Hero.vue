@@ -28,7 +28,9 @@ export default {
   background-image: url("../assets/images/hero-bg.jpg");
   background-size: cover;
   background-position: center;
+}
 
+@media screen and (min-width: 1024px) {
   .title {
     font-size: 4rem;
   }
