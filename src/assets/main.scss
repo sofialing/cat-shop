@@ -1,18 +1,21 @@
 // Import Google fonts
-// @import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,900&display=swap');
 
-// Typography
-$family-sans-serif: 'Nunito', sans-serif;
-// $family-sans-serif: 'Noto Sans', sans-serif;
-// $title-strong-weight: 900;
-
+// Weights
 $weight-bold: 900;
 $weight-semibold: 700;
 
+// Typography
+$family-sans-serif: 'Noto Sans', sans-serif;
+$title-family: 'Nunito', sans-serif;
+$title-weight: 900;
+
 // Colors
-$primary: #04b2d9;
+$primary: #79bed9;
 // $primary: #2ec4b6;
+
+$navbar-item-img-max-height: 2rem;
 
 // Import Bulma framework
 @import '~bulma/bulma';
