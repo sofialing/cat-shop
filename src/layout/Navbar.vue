@@ -1,17 +1,24 @@
 <template>
-  <nav class="navbar" role="navigation" aria-label="main navigation">
+  <nav class="navbar is-white is-spaced" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
       <a class="navbar-item" href="/">
         <img :src="logo" alt="Cat shop" width="150px" />
       </a>
 
-      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <a
+        role="button"
+        class="navbar-burger"
+        aria-label="menu"
+        aria-expanded="false"
+        @click="isOpen = !isOpen"
+        v-bind:class="{'is-active': isOpen}"
+      >
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
       </a>
     </div>
-    <div class="navbar-menu">
+    <div class="navbar-menu" v-bind:class="{'is-active': isOpen}">
       <div class="navbar-end">
         <router-link to="/" class="navbar-item">Start</router-link>
         <router-link to="/products" class="navbar-item">Produkter</router-link>
@@ -27,7 +34,8 @@ export default {
   name: "Navbar",
   data() {
     return {
-      logo: require("@/assets/logo.svg")
+      logo: require("@/assets/logo.svg"),
+      isOpen: false
     };
   }
 };
@@ -37,5 +45,21 @@ export default {
 <style scoped lang="scss">
 .navbar-item {
   text-transform: uppercase;
+}
+
+.navbar-menu {
+  margin-right: 1rem;
+  letter-spacing: 0.05em;
+  box-shadow: none;
+}
+
+.navbar.is-spaced {
+  padding: 0.5rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .navbar.is-spaced {
+    padding: 0.5rem 1rem;
+  }
 }
 </style>
