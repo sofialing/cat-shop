@@ -1,7 +1,7 @@
 <template>
   <section class="section">
     <div class="container">
-      <h2 class="title is-2 has-text-weight-bold has-text-centered">{{ title }}</h2>
+      <h2 class="title is-size-3-mobile is-2 has-text-left-mobile has-text-centered">{{ title }}</h2>
       <div class="columns is-multiline">
         <div
           v-for="product in products"
