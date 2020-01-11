@@ -4,7 +4,7 @@
       <div class="container">
         <div class="columns">
           <div class="column is-half">
-            <h1 class="title is-1 has-text-weight-bold">Vi har allt som gör din katt lycklig!</h1>
+            <h1 class="title is-1 has-text-weight-bold">Vi älskar katter. Katter älskar oss.</h1>
             <h2 class="subtitle is-5">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit
               suscipit voluptatem aliquid ipsam distinctio ipsum
