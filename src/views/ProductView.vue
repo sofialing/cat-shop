@@ -36,7 +36,7 @@
                     <a class="button is-outlined">-</a>
                   </div>
                   <div class="control">
-                    <input class="input" type="text" value="1" />
+                    <input class="input is-expanded" type="text" value="1" />
                   </div>
                   <div class="control">
                     <a class="button is-outlined">+</a>
@@ -162,15 +162,32 @@ export default {
 }
 
 .field.is-horizontal {
-  margin-bottom: 0;
+  max-width: 90%;
 }
 
 .input {
-  width: 5rem;
   text-align: center;
 }
 
 .button.is-primary {
-  margin-left: 1rem;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .field.is-horizontal {
+    width: auto;
+    margin-bottom: 0;
+    display: flex;
+  }
+
+  .input {
+    width: 5rem;
+    text-align: center;
+  }
+
+  .button.is-primary {
+    margin-left: 1rem;
+    width: auto;
+  }
 }
 </style>
