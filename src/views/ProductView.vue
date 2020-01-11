@@ -26,11 +26,8 @@
           <div class="column is-two-fifths is-offset-1">
             <div class="info">
               <h2 class="title is-3">{{product.title}}</h2>
-              <star-icon class="icon-2x" />
-              <star-icon class="icon-2x" />
-              <star-icon class="icon-2x" />
-              <star-outline-icon class="icon-2x" />
-              <star-outline-icon class="icon-2x" />
+              <star-icon class="icon-2x has-text-primary" v-for="idx in rating" :key="idx" />
+              <star-icon class="icon-2x has-text-grey-light" v-for="idx in remaining" :key="idx" />
               <p class="title price">{{product.price}}:-</p>
 
               <div class="field is-horizontal">
@@ -80,7 +77,6 @@
 <script>
 import HeroSubpage from "@/components/HeroSubpage.vue";
 import StarIcon from "vue-material-design-icons/Star.vue";
-import StarOutlineIcon from "vue-material-design-icons/StarOutline.vue";
 import CartOffIcon from "vue-material-design-icons/CartOff.vue";
 import CheckIcon from "vue-material-design-icons/CheckCircle.vue";
 import ArrowIcon from "vue-material-design-icons/ArrowLeft.vue";
@@ -92,7 +88,6 @@ export default {
     CartOffIcon,
     CheckIcon,
     StarIcon,
-    StarOutlineIcon,
     ArrowIcon
   },
   props: {
@@ -107,11 +102,15 @@ export default {
   },
   data() {
     return {
-      product: {}
+      product: {},
+      rating: 0,
+      remaining: 0
     };
   },
   created() {
     this.product = this.products.find(product => product.slug == this.slug);
+    this.rating = this.product.rating;
+    this.remaining = 5 - this.product.rating;
   },
   computed: {
     productImg() {
@@ -119,6 +118,18 @@ export default {
     },
     productUrl() {
       return "/products?category=" + this.product.category;
+    },
+    productRating() {
+      let remaining = 5 - this.product.rating;
+      let rating = "";
+      for (let i = 0; i < this.product.rating; i++) {
+        rating += '<star-icon class="icon-2x"></star-icon>';
+      }
+      for (let i = 0; i < remaining; i++) {
+        rating += '<star-outline-icon class="icon-2x"></star-outline-icon>';
+      }
+      console.log(rating);
+      return rating;
     }
   }
 };
