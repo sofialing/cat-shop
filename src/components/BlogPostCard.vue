@@ -2,19 +2,19 @@
   <div class="card">
     <div class="card-image">
       <figure class="image is-4by3 has-background-white-ter">
-        <a :href="postUrl">
+        <router-link :to="postUrl">
           <img :src="postImg" />
-        </a>
+        </router-link>
       </figure>
     </div>
     <div class="card-content">
       <div class="content">
         <p class="is-marginless">{{ post.posted }}</p>
-        <a :href="postUrl">
+        <router-link :to="postUrl">
           <h3 class="title is-size-4 has-text-weight-bold">{{ post.title }}</h3>
-        </a>
+        </router-link>
         <p>{{ postIntro }}</p>
-        <a :href="postUrl" class="is-primary has-text-weight-bold is-uppercase">Läs mer</a>
+        <router-link :to="postUrl" class="is-primary has-text-weight-bold is-uppercase">Läs mer</router-link>
       </div>
     </div>
   </div>
