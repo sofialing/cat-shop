@@ -35,4 +35,8 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+.section {
+  padding: 4rem 1.5rem;
+}
+</style>
