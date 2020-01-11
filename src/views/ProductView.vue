@@ -117,19 +117,7 @@ export default {
       return require("@/assets/images/products/" + this.product.image[0]);
     },
     productUrl() {
-      return "/products?category=" + this.product.category;
-    },
-    productRating() {
-      let remaining = 5 - this.product.rating;
-      let rating = "";
-      for (let i = 0; i < this.product.rating; i++) {
-        rating += '<star-icon class="icon-2x"></star-icon>';
-      }
-      for (let i = 0; i < remaining; i++) {
-        rating += '<star-outline-icon class="icon-2x"></star-outline-icon>';
-      }
-      console.log(rating);
-      return rating;
+      return "/products?category=" + this.product.category.toLowerCase();
     }
   }
 };
