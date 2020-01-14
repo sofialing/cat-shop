@@ -10,6 +10,7 @@
 import Navbar from '@/layout/Navbar.vue';
 import Footer from '@/layout/Footer.vue';
 import axios from 'axios';
+import { db } from '@/services/db';
 
 export default {
 	components: {
@@ -22,8 +23,11 @@ export default {
 			blogPosts: []
 		};
 	},
+	firestore: {
+		products: db.collection('products').orderBy('added')
+	},
 	mounted() {
-		axios.get('/products.json').then(res => (this.products = res.data));
+		// axios.get('/products.json').then(res => (this.products = res.data));
 		axios.get('/blogposts.json').then(res => (this.blogPosts = res.data));
 	}
 };
