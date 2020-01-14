@@ -3,23 +3,13 @@
 		<Hero :title="product.title" subtitle />
 		<section class="section">
 			<div class="container">
-				<nav class="breadcrumb" aria-label="breadcrumbs">
-					<ul>
-						<li class="is-size-7">
-							<router-link to="/products" class="has-text-grey"
-								>Produkter</router-link
-							>
-						</li>
-						<li class="is-size-7">
-							<router-link :to="productUrl" class="has-text-grey">{{
-								product.category
-							}}</router-link>
-						</li>
-						<li class="is-active is-size-7">
-							<a href="#">{{ product.title }}</a>
-						</li>
-					</ul>
-				</nav>
+				<Breadcrumbs
+					to="/products"
+					page="Produkter"
+					:to-category="productUrl"
+					:category="product.category"
+					:title="product.title"
+				/>
 
 				<div class="columns is-vcentered">
 					<div class="column is-half">
@@ -86,9 +76,9 @@
 					</div>
 				</div>
 				<arrow-icon />
-				<router-link to="/products" class="is-size-7 has-text-grey"
-					>Tillbaka till alla produkter</router-link
-				>
+				<router-link to="/products" class="is-size-7 has-text-grey">
+					Tillbaka till alla produkter
+				</router-link>
 			</div>
 		</section>
 	</div>
@@ -96,6 +86,7 @@
 
 <script>
 import HeroSubpage from '@/components/HeroSubpage.vue';
+import Breadcrumbs from '@/components/Breadcrumbs.vue';
 import StarIcon from 'vue-material-design-icons/Star.vue';
 import CartOffIcon from 'vue-material-design-icons/CartOff.vue';
 import CheckIcon from 'vue-material-design-icons/CheckCircle.vue';
@@ -105,6 +96,7 @@ export default {
 	name: 'ProductView',
 	components: {
 		Hero: HeroSubpage,
+		Breadcrumbs,
 		CartOffIcon,
 		CheckIcon,
 		StarIcon,

@@ -40,7 +40,7 @@ export default {
 	},
 	methods: {
 		getTopSellers() {
-			return this.products.filter(product => product.bestSeller);
+			return this.products.filter(product => product.rating === 5).slice(0, 4);
 		},
 		getNewArrivals() {
 			const nr = this.products.length;
