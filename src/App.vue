@@ -9,7 +9,7 @@
 <script>
 import Navbar from '@/layout/Navbar.vue';
 import Footer from '@/layout/Footer.vue';
-import axios from 'axios';
+// import axios from 'axios';
 import { db } from '@/services/db';
 
 export default {
@@ -24,11 +24,12 @@ export default {
 		};
 	},
 	firestore: {
-		products: db.collection('products').orderBy('added')
+		products: db.collection('products').orderBy('added'),
+		blogPosts: db.collection('blogposts').orderBy('posted')
 	},
 	mounted() {
 		// axios.get('/products.json').then(res => (this.products = res.data));
-		axios.get('/blogposts.json').then(res => (this.blogPosts = res.data));
+		// axios.get('/blogposts.json').then(res => (this.blogPosts = res.data));
 	}
 };
 </script>
