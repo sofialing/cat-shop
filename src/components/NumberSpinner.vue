@@ -39,11 +39,11 @@ export default {
         return;
       }
       this.newQuantity--;
-      this.$emit("update-quantity", this.newQuantity);
+      this.$emit("update", this.newQuantity);
     },
     add() {
       this.newQuantity++;
-      this.$emit("update-quantity", this.newQuantity);
+      this.$emit("update", this.newQuantity);
     }
   }
 };

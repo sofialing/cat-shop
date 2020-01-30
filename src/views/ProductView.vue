@@ -11,7 +11,7 @@
           :title="product.title"
         />
 
-        <div class="columns is-vcentered">
+        <div class="columns">
           <div class="column is-half">
             <figure class="image is-square">
               <img :src="productImg" />
@@ -25,7 +25,7 @@
               <p class="title price">{{ product.price }}:-</p>
 
               <form @submit.prevent="addToCart" class="field is-horizontal">
-                <NumberSpinner :quantity="this.quantity" min="0" @update-quantity="update" />
+                <NumberSpinner :quantity="this.quantity" min="0" @update="update" />
                 <button
                   class="button is-primary"
                   :disabled="isDisabled"
@@ -45,6 +45,11 @@
                 </span>
                 <span>Tillfälligt slut</span>
               </p>
+              <Notification
+                v-if="notification"
+                message="Produkt tillagd i varukorgen"
+                @clicked="{hideNotification}"
+              />
             </div>
             <div>
               <h3 class="title is-5">Produktbeskrivning</h3>
@@ -63,6 +68,7 @@
 import HeroSubpage from "@/components/HeroSubpage.vue";
 import Breadcrumbs from "@/components/Breadcrumbs.vue";
 import NumberSpinner from "@/components/NumberSpinner.vue";
+import Notification from "@/components/Notification.vue";
 import StarIcon from "vue-material-design-icons/Star.vue";
 import CartOffIcon from "vue-material-design-icons/CartOff.vue";
 import CheckIcon from "vue-material-design-icons/CheckCircle.vue";
@@ -74,6 +80,7 @@ export default {
     Hero: HeroSubpage,
     Breadcrumbs,
     NumberSpinner,
+    Notification,
     CartOffIcon,
     CheckIcon,
     StarIcon,
@@ -94,7 +101,8 @@ export default {
       product: {},
       rating: 0,
       remaining: 0,
-      quantity: 1
+      quantity: 1,
+      notification: false
     };
   },
   created() {
@@ -129,6 +137,10 @@ export default {
         quantity: this.quantity
       });
       localStorage.products = JSON.stringify(products);
+      this.notification = true;
+    },
+    hideNotification() {
+      this.notification = false;
     }
   }
 };
@@ -170,6 +182,10 @@ export default {
 
 .button.is-primary {
   width: 100%;
+}
+
+.notification {
+  margin-top: 2rem;
 }
 
 @media screen and (min-width: 768px) {
