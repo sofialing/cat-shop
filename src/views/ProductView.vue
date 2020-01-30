@@ -127,6 +127,18 @@ export default {
     },
     add() {
       this.quantity++;
+    },
+    addToCart() {
+      let products = [];
+      if (localStorage.products) {
+        products = JSON.parse(localStorage.products);
+      }
+      products.push({
+        name: this.product.title,
+        image: this.productImg,
+        quantity: this.quantity
+      });
+      localStorage.products = JSON.stringify(products);
     }
   }
 };
