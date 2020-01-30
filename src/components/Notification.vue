@@ -1,10 +1,8 @@
 <template>
-  <transition appear-active-class="animated fadeInDown" leave-active-class="animated fadeOutUp">
-    <div class="notification">
-      <button class="delete" @click="$emit('clicked')"></button>
-      {{message}}.
-    </div>
-  </transition>
+  <div class="notification">
+    <button class="delete" @click="$emit('clicked')"></button>
+    {{message}}.
+  </div>
 </template>
 
 <script>

@@ -1,7 +1,7 @@
 <template>
   <article class="media">
     <figure class="media-left image is-128x128">
-      <img :src="item.image" />
+      <img :src="image" />
     </figure>
     <div class="media-content">
       <p class="content">{{item.name}}</p>
@@ -36,6 +36,11 @@ export default {
     index: {
       type: Number,
       required: true
+    }
+  },
+  computed: {
+    image() {
+      return require("@/assets/images/products/" + this.item.image);
     }
   },
   methods: {
