@@ -25,17 +25,7 @@
               <p class="title price">{{ product.price }}:-</p>
 
               <form @submit.prevent="addToCart" class="field is-horizontal">
-                <div class="field has-addons">
-                  <div class="control">
-                    <a class="button is-outlined" @click="subtract">-</a>
-                  </div>
-                  <div class="control">
-                    <input class="input is-expanded" type="text" :value="quantity" />
-                  </div>
-                  <div class="control">
-                    <a class="button is-outlined" @click="add">+</a>
-                  </div>
-                </div>
+                <NumberSpinner :quantity="this.quantity" min="0" @update-quantity="update" />
                 <button
                   class="button is-primary"
                   :disabled="isDisabled"
@@ -72,6 +62,7 @@
 <script>
 import HeroSubpage from "@/components/HeroSubpage.vue";
 import Breadcrumbs from "@/components/Breadcrumbs.vue";
+import NumberSpinner from "@/components/NumberSpinner.vue";
 import StarIcon from "vue-material-design-icons/Star.vue";
 import CartOffIcon from "vue-material-design-icons/CartOff.vue";
 import CheckIcon from "vue-material-design-icons/CheckCircle.vue";
@@ -82,6 +73,7 @@ export default {
   components: {
     Hero: HeroSubpage,
     Breadcrumbs,
+    NumberSpinner,
     CartOffIcon,
     CheckIcon,
     StarIcon,
@@ -122,11 +114,8 @@ export default {
     }
   },
   methods: {
-    subtract() {
-      this.quantity ? this.quantity-- : 0;
-    },
-    add() {
-      this.quantity++;
+    update(number) {
+      this.quantity = number;
     },
     addToCart() {
       let products = [];
@@ -136,6 +125,7 @@ export default {
       products.push({
         name: this.product.title,
         image: this.productImg,
+        price: this.product.price,
         quantity: this.quantity
       });
       localStorage.products = JSON.stringify(products);

@@ -25,6 +25,7 @@
         <router-link to="/blog" class="navbar-item">Blogg</router-link>
         <router-link to="/about" class="navbar-item">Om oss</router-link>
         <router-link to="/contact" class="navbar-item">Kontakt</router-link>
+        <router-link to="/cart" class="navbar-item">Varukorg</router-link>
       </div>
     </div>
   </nav>
