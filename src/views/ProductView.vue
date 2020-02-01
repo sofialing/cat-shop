@@ -82,6 +82,9 @@ export default {
     },
     productUrl() {
       return "/products?category=" + this.product.category.toLowerCase();
+    },
+    getProduct() {
+      return this.products.find(product => product.slug == this.slug);
     }
   },
   methods: {
@@ -95,5 +98,10 @@ export default {
 <style scoped lang="scss">
 .notification {
   margin-top: 1rem;
+}
+
+.arrow-left-icon {
+  margin-right: 0.5rem;
+  line-height: 1;
 }
 </style>

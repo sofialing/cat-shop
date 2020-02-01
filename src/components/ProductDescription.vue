@@ -18,6 +18,16 @@ export default {
 </script>
 <style lang="scss" scoped>
 .content {
-  margin-top: 3rem;
+  margin-top: 2rem;
+}
+
+.title.is-5 {
+  margin-bottom: 0.25rem;
+}
+
+@media screen and (min-width: 768px) {
+  .content {
+    margin-top: 3rem;
+  }
 }
 </style>

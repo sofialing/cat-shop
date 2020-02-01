@@ -14,7 +14,7 @@
         <p class="title is-size-2 has-text-weight-bold is-marginless">{{ product.price }}:-</p>
         <p v-if="product.inventory" class="is-size-7">
           <span class="icon">
-            <check-icon class="has-text-success" />
+            <check-icon class="has-text-primary" />
           </span>
           <span>Finns i lager</span>
         </p>

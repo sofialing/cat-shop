@@ -4,16 +4,23 @@
       <img :src="image" />
     </figure>
     <div class="media-content">
-      <p class="content">{{item.name}}</p>
+      <div class="level">
+        <div class="level-left">
+          <div class="level-item">
+            <h3 class="is-size-6 has-text-weight-bold">{{item.name}}</h3>
+          </div>
+        </div>
+
+        <div class="level-right">
+          <p class="level-item">{{item.price}} kr/st</p>
+        </div>
+      </div>
       <NumberSpinner :quantity="item.quantity" min="1" @update="update(item, ...arguments)" />
-      <a href @click.prevent="removeItem(index)">
+      <a href @click.prevent="removeItem(index)" class="delete-item">
         <small class="has-text-grey">
           <trash-can-icon class="icon-2x" />Ta bort
         </small>
       </a>
-    </div>
-    <div class="media-right">
-      <p class="content">{{item.price}} kr</p>
     </div>
   </article>
 </template>
@@ -63,5 +70,16 @@ export default {
   height: 1.5em;
   width: 1.5em;
   line-height: 1;
+}
+
+.level:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.level-item {
+  justify-content: flex-start;
+}
+
+.level-left + .level-right {
+  margin-top: 0.25rem;
 }
 </style>

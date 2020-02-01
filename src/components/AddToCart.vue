@@ -1,12 +1,12 @@
 <template>
   <div>
-    <form @submit.prevent="addToCart" class="field is-horizontal">
+    <form @submit.prevent="addToCart">
       <NumberSpinner :quantity="this.quantity" min="0" @update="update" />
       <button class="button is-primary" :disabled="isDisabled" type="submit">Lägg till varukorg</button>
     </form>
     <p v-if="product.inventory" class="is-size-7">
       <span class="icon">
-        <check-icon class="has-text-success" />
+        <check-icon class="has-text-primary" />
       </span>
       <span>Finns i lager</span>
     </p>
@@ -56,45 +56,47 @@ export default {
     },
     addToCart() {
       let products = [];
+
       if (localStorage.products) {
         products = JSON.parse(localStorage.products);
       }
-      products.push({
-        name: this.product.title,
-        image: this.product.image[0],
-        price: this.product.price,
-        quantity: this.quantity
-      });
+
+      if (this.productAdded(products)) {
+        const index = products.findIndex(
+          product => product.id === this.product.id
+        );
+        products[index].quantity = this.quantity;
+      } else {
+        products.push({
+          name: this.product.title,
+          id: this.product.id,
+          image: this.product.image[0],
+          price: this.product.price,
+          quantity: this.quantity
+        });
+      }
       localStorage.products = JSON.stringify(products);
       this.$emit("toggle");
+    },
+    productAdded(products) {
+      return products.some(product => product.id === this.product.id);
     }
   }
 };
 </script>
 
-<style lang="scss">
-.field.is-horizontal {
-  max-width: 90%;
-}
-
-.input {
-  text-align: center;
+<style lang="scss" scoped>
+form {
+  margin-bottom: 0.75rem;
 }
 
 .button.is-primary {
-  width: 100%;
+  width: 75%;
 }
 
 @media screen and (min-width: 768px) {
-  .field.is-horizontal {
-    width: auto;
-    margin-bottom: 0;
+  form {
     display: flex;
-  }
-
-  .input {
-    width: 5rem;
-    text-align: center;
   }
 
   .button.is-primary {

@@ -26,7 +26,7 @@
         <div class="columns is-multiline">
           <div
             v-for="product in getProducts"
-            :key="product.slug"
+            :key="product.id"
             class="column is-half-tablet is-one-quarter-desktop"
           >
             <ProductCard :product="product" />

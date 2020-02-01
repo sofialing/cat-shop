@@ -18,22 +18,42 @@
           <td>Gratis</td>
         </tr>
         <tr class="has-text-weight-bold">
-          <td>Totalsumma (inkl. moms)</td>
+          <td>Summa</td>
           <td>{{sum}} kr</td>
         </tr>
       </table>
-      <button class="button is-primary is-fullwidth">Gå till kassan</button>
+      <button class="button is-primary is-fullwidth" @click="toggle">Gå till kassan</button>
     </div>
+    <transition enter-active-class="animated fadeInDown" leave-active-class="animated fadeOutUp">
+      <Notification v-if="notification" :message="message" @clicked="toggle" />
+    </transition>
   </div>
 </template>
 
 <script>
+import Notification from "@/components/Notification.vue";
+
 export default {
   name: "CartDetails",
+  components: {
+    Notification
+  },
+  data() {
+    return {
+      notification: false,
+      message:
+        "Denna funktion är för tillfället inte tillgänlig. Försök igen senare."
+    };
+  },
   props: {
     sum: {
       type: Number,
       required: true
+    }
+  },
+  methods: {
+    toggle() {
+      this.notification = !this.notification;
     }
   }
 };
