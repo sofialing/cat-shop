@@ -3,7 +3,7 @@ import 'firebase/firestore';
 
 // Get a Firestore instance
 export const db = firebase
-	.initializeApp({ projectId: 'cat-shop-eff46' })
+	.initializeApp({ projectId: process.env.VUE_APP_ID })
 	.firestore();
 
 // Export types that exists in Firestore
