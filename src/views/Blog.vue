@@ -27,16 +27,15 @@ export default {
 		Hero: HeroSubpage,
 		Post: BlogPostCard
 	},
-	props: {
-		blogPosts: {
-			type: Array,
-			required: true
-		}
-	},
 	data() {
 		return {
 			title: 'Nyheter, tips & råd'
 		};
+	},
+	computed: {
+		blogPosts() {
+			return this.$store.getters.getBlogPosts;
+		}
 	}
 };
 </script>

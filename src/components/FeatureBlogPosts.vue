@@ -8,8 +8,8 @@
 			</h2>
 			<div class="columns is-multiline">
 				<div
-					v-for="post in posts"
-					v-bind:key="post.slug"
+					v-for="(post, index) in posts"
+					v-bind:key="index"
 					class="column is-one-third"
 				>
 					<BlogPostCard :post="post" />

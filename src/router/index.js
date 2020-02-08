@@ -55,7 +55,7 @@ const routes = [
 
 const router = new VueRouter({
 	mode: 'history',
-	base: __dirname,
+	base: '/cat-shop/',
 	routes
 });
 

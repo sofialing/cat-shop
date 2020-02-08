@@ -1,12 +1,12 @@
 <template>
 	<div>
-		<Hero :title="title" subtitle />
+		<Hero title="Nyheter, tips & råd" subtitle />
 		<section class="section">
 			<div class="container">
 				<Breadcrumbs
 					to="/blog"
 					page="Blogg"
-					:to-category="categoryUrl"
+					to-category="/blog"
 					:category="post.category"
 					:title="post.title"
 				/>
@@ -39,6 +39,7 @@ import moment from 'moment';
 import HeroSubpage from '@/components/HeroSubpage.vue';
 import Breadcrumbs from '@/components/Breadcrumbs.vue';
 import ArrowIcon from 'vue-material-design-icons/ArrowLeft.vue';
+import { mapGetters } from 'vuex';
 
 export default {
 	name: 'BlogView',
@@ -47,26 +48,10 @@ export default {
 		Breadcrumbs,
 		ArrowIcon
 	},
-	props: {
-		blogPosts: {
-			type: Array,
-			required: true
-		},
-		slug: {
-			type: String,
-			required: true
-		}
-	},
-	data() {
-		return {
-			title: 'Nyheter, tips & råd',
-			post: {}
-		};
-	},
-	created() {
-		this.post = this.blogPosts.find(post => post.slug == this.slug);
-	},
 	computed: {
+		...mapGetters({
+			post: 'getCurrentPost'
+		}),
 		postDate() {
 			return moment.unix(this.post.posted.seconds).format('YYYY-MM-DD');
 		},
